@@ -13,13 +13,13 @@ const NFTs =[]
 // and store it in the variable above.
 function mintNFT (_name, _hairColor, _cityType, _bling) {
    const NFT = {
-      "name": _name,
-      "hairColor": _hairColor,
-      "cityType": _cityType,
-      "bling": _bling
+      "name":_name,
+      "hairColor":_hairColor,
+      "cityType":_cityType,
+      "bling":_bling
    }
    NFTs.push(NFT);
-   console.log("Minted: " + _name);
+   console.log("Minted:" + _name);
 }
 
 
@@ -27,10 +27,10 @@ function mintNFT (_name, _hairColor, _cityType, _bling) {
 // and print their metadata with console.log()
 function listNFTs () {
 for(let i = 0; i < NFTs.length; i++){
-   console.log("\nID: \t\t" + (i+1));
-   console.log("Name: \t\t" + NFTs[i].name);
-   console.log("haircolor: \t" + NFTs[i].hairColor);
-   console.log("citytype: \t" + NFTs[i].cityType);
+   console.log("\nID:\t\t" + (i+1));
+   console.log("Name:\t\t" + NFTs[i].name);
+   console.log("haircolor:\t" + NFTs[i].hairColor);
+   console.log("citytype:\t" + NFTs[i].cityType);
    console.log("Bling: \t\t" + NFTs[i].bling);
 }
 }
